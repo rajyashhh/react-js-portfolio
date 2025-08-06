@@ -3,9 +3,10 @@ import HeroText from '../components/HeroText'
 import ParallaxBackground from '../components/ParallaxBackground'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Astronaut } from '../components/Astronaut'
-import {OrbitControls, Float, Loader} from '@react-three/drei'
+import {OrbitControls, Float} from '@react-three/drei'
 import {useMediaQuery} from 'react-responsive'
 import { easing } from 'maath';
+import Loading from '../components/Loading'
 
 
 function Hero() {
@@ -16,14 +17,14 @@ function Hero() {
         <ParallaxBackground/>
         <figure className='absolute inset-0' style={{width: "100vw", height: "100vh"}}>
             <Canvas camera={{position: [0,1,3]}}>
-              <Suspense fallback={<Loader/>}>
+              <Suspense fallback={<Loading/>}>
                 <Float>
                 <Astronaut 
                 scale={isMobile && 0.23} 
                 position={isMobile && [0, -1.5, 0]}/>
                 </Float>
               
-              <OrbitControls/>
+              <OrbitControls enableZoom={false} />
               <Rig/>
               </Suspense>
               
