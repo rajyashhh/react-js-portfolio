@@ -24,7 +24,7 @@ function Hero() {
                 position={isMobile && [0, -1.5, 0]}/>
                 </Float>
               
-              <OrbitControls enableZoom={false} />
+              {!isMobile && <OrbitControls enableZoom={false} />}
               <Rig/>
               </Suspense>
               

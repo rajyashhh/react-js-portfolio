@@ -113,7 +113,9 @@ body {
 .grid-5 {
   @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
-
+.grid-6 {
+  @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
 .grid-default-color {
   @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl;
 }
