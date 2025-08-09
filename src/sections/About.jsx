@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { Globe } from '../components/Globe';
 import CopyEmailButton from '../components/CopyEmailButton';
 import {Frameworks} from '../components/Frameworks';
+import GithubGraph from '../components/GithubGraph';
 
 const About = () => {
     const grid2Container = useRef();
@@ -31,7 +32,7 @@ const About = () => {
                     <Card style={{rotate: "-30deg", top:"20%", left:"10%"}} text="Sleek Design" containerRef={grid2Container}/>
                     <Card style={{rotate: "25deg", top:"80%", left:"40%"}} text="Modern Design" containerRef={grid2Container}/>
                     <Card style={{rotate: "-15deg", top:"65%", left:"65%"}} text="SEO friendly" containerRef={grid2Container}/>
-                    <Card style={{rotate: "60 deg", top:"60%", left:"-10%"}} text="SAAS" containerRef={grid2Container}/>
+                    <Card style={{rotate: "-40deg", top:"60%", left:"-10%"}} text="SAAS" containerRef={grid2Container}/>
                     <Card style={{rotate: "50deg", top:"30%", left:"70%"}} text="Full Stack" containerRef={grid2Container}/>
                     {/* <Card style={{rotate: "-45deg", top:"55%", left:"0%"}} text="Powerful" containerRef={grid2Container}/> */}
                     <Card style={{rotate: "30deg", top:"10%", left:"70%"}} image="assets/logos/atom.png" containerRef={grid2Container}/>
@@ -42,7 +43,7 @@ const About = () => {
             {/* Grid 3 */}
             <div className='grid-black-color grid-3'>
                 <div className="z-10 w-[50%]">
-                    <p className='headtext'>Time Zone</p>
+                    <p className='headtext'>Time Zone (GMT +5:30)</p>
                     <p className='subtext'>I'm based in Kolkata, India and open to remote work worldwide</p>
                 </div>
                 <figure className='absolute left-[30%] top-[10%]'>
@@ -68,7 +69,23 @@ const About = () => {
                 </div>
             </div>
             {/* Grid 6 */}
-            <div className='grid-default-color grid-6'></div>
+            <a
+                href="https://github.com/rajyashhh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-default-color grid-6 flex flex-col items-center justify-center p-4 rounded-2xl shadow-lg hover:scale-[1.01] transition-transform cursor-pointer text-center"
+                >
+                <p className="headtext mb-4">
+                    That retro snake eating my GitHub Contributions!
+                </p>
+                <p className="subtext mb-0">
+                Help me save my contributions! Click to chase the snake on GitHub.
+                </p>
+                <GithubGraph />
+            </a>
+
+            
+            
         </div>
         
 
