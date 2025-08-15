@@ -10,24 +10,24 @@ export const myProjects = [
         "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
         "Added payment systems, localization, and product filtering for functionality improvements.",
       ],
-      href: "",
+      href: "https://y.yashhh.tech/",
       logo: "",
       image: "/assets/projects/y.jpeg",
       tags: [
         {
           id: 1,
-          name: "C#",
-          path: "/assets/logos/csharp.svg",
+          name: "React",
+          path: "/assets/logos/react.svg",
         },
         {
           id: 2,
-          name: ".Net",
-          path: "/assets/logos/dotnet.svg",
+          name: "Express",
+          path: "/assets/logos/express.svg",
         },
         {
           id: 3,
-          name: "Ef Core",
-          path: "/assets/logos/efcore.png",
+          name: "MongoDB",
+          path: "/assets/logos/MongoDB.svg",
         },
         {
           id: 4,
