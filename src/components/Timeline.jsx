@@ -18,7 +18,7 @@ export const Timeline = ({
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 70%"],
+    offset: ["start 20%", "end 50%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -26,7 +26,7 @@ export const Timeline = ({
 
   return (
     <div
-      className="c-space section-spacing"
+      className="c-space section-spacing pb-20 overflow-hidden"
       ref={containerRef}>
       <h2 className="text-heading">My Experiences</h2>
       <div ref={ref} className="relative pb-20">

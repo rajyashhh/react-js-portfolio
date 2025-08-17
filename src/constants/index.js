@@ -135,7 +135,7 @@ export const myProjects = [
       img: "https://robohash.org/dave",
     },
     {
-      name: "Eve",
+      name: "Yash Raj SIngh",
       username: "@eve",
       body: "So glad I found this. It has changed the game for me.",
       img: "https://robohash.org/eve",
