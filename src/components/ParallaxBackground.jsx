@@ -37,7 +37,7 @@ function ParallaxBackground() {
             {/* Mountain Layer 2 */}
             <motion.div className='absolute inset-0 -z-20'
             style={{
-                backgroundImage:"url(/assets/mountain-2.png)",
+                backgroundImage:"url(/assets/mountain-2.webp)",
                 backgroundPosition: "bottom",
                 backgroundSize: "cover",
                 y:mountain2Y,

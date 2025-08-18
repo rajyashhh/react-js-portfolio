@@ -93,10 +93,10 @@ export const myProjects = [
   ];
   export const reviews = [
     {
-      name: "Jack",
-      username: "@jack",
-      body: "I've never seen anything like this before. It's amazing. I love it.",
-      img: "https://robohash.org/jack",
+      name: "Piyush Kumar Gupta",
+      username: "Student Head, JU E-Cell",
+      body: "Hardworking and diligent, a team player and has a great personality.",
+      img: "/assets/testimonial-pfps/dark_mode - Piyush Gupta.webp",
     },
     {
       name: "Jill",
