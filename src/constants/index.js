@@ -97,47 +97,55 @@ export const myProjects = [
       username: "Student Head, JU E-Cell",
       body: "Hardworking and diligent, a team player and has a great personality.",
       img: "/assets/testimonial-pfps/dark_mode - Piyush Gupta.webp",
+      link: "https://www.linkedin.com/in/kumarpiyushgupta/", 
     },
     {
-      name: "Jill",
-      username: "@jill",
-      body: "I don't know what to say. I'm speechless. This is amazing.",
-      img: "https://robohash.org/jill",
+      name: "Aditya Anand",
+      username: "Music Producer, Astralite",
+      body: "Yash is one of those people you can always count on to get things done, well. He knows his tools and skillsets when it comes to tech, and he always takes the time to understand what’s needed before jumping in. I’ve seen the care and thought he puts into his work, and it shows in the results.",
+      img: "/assets/testimonial-pfps/aditya.webp",
+      link: "https://www.instagram.com/adityaanand", // example link
     },
     {
-      name: "John",
-      username: "@john",
-      body: "I'm at a loss for words. This is amazing. I love it.",
+      name: "Aditya Kumar Sharma",
+      username: "Incoming Product Intern @Adobe",
+      body: "Crazyy guy, completed all the work before time, and quality was at the top, will definitely recommend to my friends and colleagues!",
       img: "https://robohash.org/john",
+      link: "https://linkedin.com/in/aditya-sharma", // example link
     },
     {
       name: "Alice",
       username: "@alice",
       body: "This is hands down the best thing I've experienced. Highly recommend!",
       img: "https://robohash.org/alice",
+      link: "https://twitter.com/alice", // example link
     },
     {
       name: "Bob",
       username: "@bob",
       body: "Incredible work! The attention to detail is phenomenal.",
       img: "https://robohash.org/bob",
+      link: "https://twitter.com/bob", // example link
     },
     {
       name: "Charlie",
       username: "@charlie",
       body: "This exceeded all my expectations. Absolutely stunning!",
       img: "https://robohash.org/charlie",
+      link: "https://twitter.com/charlie", // example link
     },
     {
       name: "Dave",
       username: "@dave",
       body: "Simply breathtaking. The best decision I've made in a while.",
       img: "https://robohash.org/dave",
+      link: "https://twitter.com/dave", // example link
     },
     {
       name: "Yash Raj SIngh",
       username: "@eve",
       body: "So glad I found this. It has changed the game for me.",
       img: "https://robohash.org/eve",
+      link: "https://github.com/yashrajsingh", // example link
     },
   ];
