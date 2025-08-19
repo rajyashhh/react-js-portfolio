@@ -40,18 +40,28 @@ export const myProjects = [
   
   export const mySocials = [
     {
+      name: "X",
+      href: "https://x.com/raj_yashhh",
+      icon: "/assets/socials/x.webp",
+    },
+    {
       name: "WhatsApp",
-      href: "",
-      icon: "/assets/socials/whatsApp.svg",
+      href: "https://github.com/rajyashhh",
+      icon: "/assets/socials/github.svg",
+    },
+    {
+      name: "WhatsApp",
+      href: "https://wa.me/916201573631?text=Hey%20Yashhh%2C%0A%0ALet%27s%20collaborate%20on%20...",
+      icon: "/assets/socials/whatsapp.svg",
     },
     {
       name: "Linkedin",
-      href: "https://www.linkedin.com/in/ali-sanati/",
+      href: "https://www.linkedin.com/in/yashhhhh/",
       icon: "/assets/socials/linkedIn.svg",
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/ali.sanatidev/reels/",
+      href: "https://www.instagram.com/raj.yashhh/",
       icon: "/assets/socials/instagram.svg",
     },
   ];

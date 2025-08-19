@@ -8,6 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import Experiences from './sections/Experiences'
 import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 function App() {
   return (
     <div className='container mx-auto max-w-7xl'>
@@ -18,9 +19,10 @@ function App() {
       <Experiences/>
       <Testimonials/>
       <Contact/>
-      {/* footer */ }
+      
       <SpeedInsights/>
       <Analytics/>
+      <Footer/>
     </div>
   )
 }
