@@ -1,25 +1,38 @@
 import React, { useState } from 'react'
 import {motion} from "motion/react"
-function Navigation(){
+function Navigation() {
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+  
     return (
-        <ul className='nav-ul'>
-        <li className='nav-li'>
-            <a className='nav-link' href="#home">Home</a>
+      <ul className="nav-ul">
+        <li className="nav-li">
+          <button className="nav-link" onClick={() => scrollToSection("home")}>
+            Home
+          </button>
         </li>
-        <li className='nav-li'>
-            <a className='nav-link' href="#about">About</a>
+        <li className="nav-li">
+          <button className="nav-link" onClick={() => scrollToSection("about")}>
+            About
+          </button>
         </li>
-        <li className='nav-li'>
-            <a className='nav-link' href="#work">Work</a>
+        <li className="nav-li">
+          <button className="nav-link" onClick={() => scrollToSection("work")}>
+            Work
+          </button>
         </li>
-        <li className='nav-li'>
-            <a className='nav-link' href="#contact">Contact</a>
+        <li className="nav-li">
+          <button className="nav-link" onClick={() => scrollToSection("contact")}>
+            Contact
+          </button>
         </li>
-
-    </ul>
-    )
-    
-}
+      </ul>
+    );
+  }
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false) 
   return (
