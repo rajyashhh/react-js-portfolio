@@ -13,7 +13,7 @@ const ReviewCard = ({
   body,
 }) => {
   return (
-    <figure
+    <figure id="reviews"
       className={twMerge(
         "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // dark styles
@@ -36,22 +36,22 @@ const ReviewCard = ({
 
 export default function Testimonials() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space">
-        <h2 className="text-heading">What People say about me!</h2>
-    <div className="relative flex w-full mt-12 flex-col items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-primary"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-primary"></div>
+    <div id="reviews" className="items-start mt-25 md:mt-35 c-space scroll-mt-20">
+      <h2 className="text-heading">What People say about me!</h2>
+      <div className="relative flex w-full mt-12 flex-col items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {firstRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
+          {secondRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-primary"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-primary"></div>
+      </div>
     </div>
-    </div>
-  );
+  )
 }

@@ -5,7 +5,11 @@ import { experiences } from '../constants'
 const Experiences = () => {
   return (
     <div className='w-full'>
-        <Timeline data={experiences}/>
+      {/* Invisible anchor with offset */}
+      <div id="experience" className="scroll-mt-20"></div> 
+
+      {/* Actual content */}
+      <Timeline data={experiences} />
     </div>
   )
 }
