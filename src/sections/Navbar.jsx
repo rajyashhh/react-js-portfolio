@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { motion } from "motion/react"
 
 function Navigation({ activeSection }) {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id, isExternal) => {
+    if (isExternal) {
+      window.location.href = `/${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -16,6 +20,7 @@ function Navigation({ activeSection }) {
     { id: "experience", label: "Experiences" },
     { id: "reviews", label: "Reviews" },
     { id: "contact", label: "Contact" },
+    { id: "resume", label: "Resume", isExternal: true },
   ];
 
   return (
@@ -26,7 +31,7 @@ function Navigation({ activeSection }) {
             className={`nav-link ${
               activeSection === link.id ? "text-white font-bold" : "text-neutral-400"
             }`}
-            onClick={() => scrollToSection(link.id)}
+            onClick={() => scrollToSection(link.id, link.isExternal)}
           >
             {link.label}
           </button>

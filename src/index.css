@@ -90,7 +90,7 @@ body {
 }
 
 .nav-link {
-  @apply text-lg md:text-base hover:text-white transition-colors;
+  @apply text-lg md:text-base hover:text-white transition-colors cursor-pointer;
 }
 /* Button Components */
 .btn {
