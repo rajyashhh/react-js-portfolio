@@ -4,7 +4,7 @@ import ImageSlider from './ImageSlider'
 const ProjectDetails = ({ title, description, subDescription, href, image, tags, closeModal, githubUrl }) => {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-            <div className="relative bg-neutral-900 rounded-lg p-8 max-w-4xl max-h-[90vh] overflow-y-auto m-4" onClick={(e) => e.stopPropagation()}>
+            <div className="relative bg-neutral-900 rounded-lg p-8 w-[95vw] max-w-6xl max-h-none overflow-visible m-4" onClick={(e) => e.stopPropagation()}>
                 {/* Close Button */}
                 <button
                     onClick={closeModal}
