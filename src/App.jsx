@@ -6,6 +6,9 @@ import Projects from './sections/Projects'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Experiences from './sections/Experiences'
+import Testimonials from './sections/Testimonials'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 function App() {
   return (
     <div className='container mx-auto max-w-7xl'>
@@ -14,13 +17,12 @@ function App() {
       <About/>
       <Projects/>
       <Experiences/>
-      <section className='min-h-screen'/>
-      <section className='min-h-screen'/>
-      {/* testimonials */ }
-      {/* contact */ }
-      {/* footer */ }
+      <Testimonials/>
+      <Contact/>
+      
       <SpeedInsights/>
       <Analytics/>
+      <Footer/>
     </div>
   )
 }
