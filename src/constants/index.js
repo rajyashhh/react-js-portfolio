@@ -11,18 +11,19 @@ export const myProjects = [
         "Added payment systems, localization, and product filtering for functionality improvements.",
       ],
       href: "https://y.yashhh.tech/",
+      githubUrl: "https://github.com/rajyashhh/Y-Twitter-X-Clone",
       logo: "",
-      image: "/assets/projects/y.jpeg",
+      image: ["/assets/projects/y/y.webp","/assets/projects/y/y-2.webp","/assets/projects/y/y-3.webp","/assets/projects/y/y-4.webp","/assets/projects/y/y-5.webp"],
       tags: [
         {
           id: 1,
           name: "React",
-          path: "/assets/logos/react.svg",
+          path: "/assets/logos/reactjs.svg",
         },
         {
           id: 2,
           name: "Express",
-          path: "/assets/logos/express.svg",
+          path: "/assets/logos/Express.svg",
         },
         {
           id: 3,
