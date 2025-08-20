@@ -13,7 +13,7 @@ const variants={
     <div className='z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text'>
         {/* Desktop View  */}
         <div className='flex-col hidden md:flex c-space'>
-            <motion.h1 className='text-4xl font-medium'
+            <motion.h1 className='text-5xl font-medium'
                         variants={variants}
                         initial="hidden"
                         animate="visible"
@@ -23,7 +23,7 @@ const variants={
                              variants={variants}
                              initial="hidden"
                              animate="visible"
-                             transition={{delay : 1.2}}>A developer <br/>Who Ships MVPs Superfast!</motion.p>
+                             transition={{delay : 1.2}}> <br/>A developer who Ships</motion.p>
                 <motion.div  variants={variants}
                             initial="hidden"
                             animate="visible"
@@ -34,7 +34,7 @@ const variants={
                             variants={variants}
                             initial="hidden"
                             animate="visible"
-                            transition={{delay : 1.8}}>Web solutions</motion.p>
+                            transition={{delay : 1.8}}>MVPs and Web solutions Superfast!</motion.p>
             </div>
         </div>
         {/* Mobile View */}

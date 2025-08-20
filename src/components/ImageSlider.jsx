@@ -54,7 +54,7 @@ const ImageSlider = ({
         <img 
           src={images[0]} 
           alt="Project" 
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-full object-contain rounded-lg"
         />
       </div>
     );
@@ -66,7 +66,7 @@ const ImageSlider = ({
       <img 
         src={images[currentIndex]} 
         alt={`Project ${currentIndex + 1}`}
-        className="w-full h-full object-cover rounded-lg transition-opacity duration-300"
+        className="w-full h-full object-contain rounded-lg transition-opacity duration-300"
       />
       
       {/* Navigation Controls (only show when showControls is true) */}

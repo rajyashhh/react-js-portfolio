@@ -35,32 +35,37 @@ function Projects() {
 
     return (
         <section 
-            id="work"
-            onMouseMove={handleMouseMove}
-            className="relative c-space section-spacing"
-        >
-            <h2 className="text-heading">Some Cool Projects</h2>
-            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full">
-                {myProjects.map((project) => (
-                    <Project key={project.id} {...project} setPreview={setPreview}/>
-                ))}
-            </div>
-            
-            {preview && previewImages.length > 0 && (
-                <motion.div 
-                    className="fixed top-0 left-0 z-50 pointer-events-none w-100 h-70" 
-                    style={{x: springX, y: springY}}
-                >
-                    <ImageSlider 
-                        images={previewImages}
-                        interval={1500} // 1 second for preview
-                        showControls={false}
-                        className="w-full h-full shadow-lg"
-                        onImageChange={() => {}} // No need to update preview in this case
-                    />
-                </motion.div>
-            )}
-        </section>
+  id="work"
+  onMouseMove={handleMouseMove}
+  className="relative c-space section-spacing"
+>
+  <h2 className="text-heading">Some Cool Projects</h2>
+
+  {/* Divider */}
+  <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"></div>
+
+  {/* Projects List */}
+  <div className="mt-12 grid gap-8">
+    {myProjects.map((project) => (
+      <Project key={project.id} {...project} setPreview={setPreview}/>
+    ))}
+  </div>
+
+  {preview && previewImages.length > 0 && (
+    <motion.div 
+      className="fixed top-0 left-0 z-50 pointer-events-none w-100 h-70" 
+      style={{x: springX, y: springY}}
+    >
+      <ImageSlider 
+        images={previewImages}
+        interval={1500}
+        showControls={false}
+        className="w-full h-full shadow-lg"
+        onImageChange={() => {}}
+      />
+    </motion.div>
+  )}
+</section>
     )
 }
 
