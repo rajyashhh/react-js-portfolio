@@ -3,12 +3,12 @@ import ImageSlider from './ImageSlider'
 
 const ProjectDetails = ({ title, description, subDescription, href, image, tags, closeModal, githubUrl }) => {
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+        <div className="fixed inset-0 z-60 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
             <div className="relative bg-neutral-900 rounded-lg p-8 w-[95vw] max-w-6xl max-h-none overflow-visible m-4" onClick={(e) => e.stopPropagation()}>
                 {/* Close Button */}
                 <button
                     onClick={closeModal}
-                    className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl font-bold z-10"
+                    className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl font-bold z-20"
                     aria-label="Close modal"
                 >
                     ×

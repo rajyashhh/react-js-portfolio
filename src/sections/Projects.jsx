@@ -55,7 +55,7 @@ function Projects() {
             
             {preview && previewImages.length > 0 && (
                 <motion.div 
-                    className="fixed top-0 left-0 z-50 pointer-events-none w-100 h-70"
+                    className="fixed top-0 left-0 z-40 pointer-events-none w-100 h-70"
                     style={{x: springX, y: springY}}
                 >
                     <ImageSlider 

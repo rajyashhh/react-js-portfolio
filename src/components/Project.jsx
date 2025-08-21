@@ -37,7 +37,7 @@ const Project = ({title, description, subDescription, href, image, tags, setPrev
                 </div>
                 
                 <button 
-                    onClick={() => setIsHidden(true)}
+                    onClick={() => { setIsHidden(true); setPreview(null); }}
                     className='flex items-center gap-1 cursor-pointer hover-animation whitespace-nowrap mt-2 sm:mt-0'
                 >
                     Read More
