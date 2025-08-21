@@ -39,7 +39,7 @@ const variants={
         </div>
         {/* Mobile View */}
         <div className='flex flex-col space-y-6 md:hidden'>
-            <motion.h1 className='text-4x; font-medium'
+            <motion.h1 className='text-4xl font-medium'
                          variants={variants}
                          initial="hidden"
                          animate="visible"
