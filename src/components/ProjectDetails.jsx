@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ImageSlider from './ImageSlider'
 
 const ProjectDetails = ({ title, description, subDescription, href, image, tags, closeModal, githubUrl }) => {
+    // Lock background scroll while modal is open
+    useEffect(() => {
+        const originalOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = originalOverflow;
+        };
+    }, []);
+
     return (
         <div className="fixed inset-0 z-60 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-            <div className="relative bg-neutral-900 rounded-lg p-8 w-[95vw] max-w-6xl max-h-none overflow-visible m-4" onClick={(e) => e.stopPropagation()}>
+            <div className="relative bg-neutral-900 rounded-lg p-8 w-[95vw] max-w-6xl max-h-[85vh] overflow-y-auto m-4 overscroll-contain" onClick={(e) => e.stopPropagation()} style={{ WebkitOverflowScrolling: 'touch' }}>
                 {/* Close Button */}
                 <button
                     onClick={closeModal}
