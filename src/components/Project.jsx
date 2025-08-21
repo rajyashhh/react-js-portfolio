@@ -23,41 +23,41 @@ const Project = ({title, description, subDescription, href, image, tags, setPrev
     return (
         <>
             <div 
-                className='flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0' 
+                className='w-full max-w-full flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center justify-between py-10 space-y-4 sm:space-y-0 px-4 sm:px-0'
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div>
-                    <p className='text-2xl'>{title}</p>
-                    <div className="flex gap-5 mt-2 text-sand">
+                <div className="w-full sm:w-auto sm:flex-1 sm:pr-4">
+                    <p className='text-2xl break-words'>{title}</p>
+                    <div className="flex flex-wrap gap-2 sm:gap-5 mt-2 text-sand">
                         {tags.map((tag) => (
-                            <span key={tag.id}>{tag.name}</span>
+                            <span key={tag.id} className="whitespace-nowrap">{tag.name}</span>
                         ))}
-                    </div>   
+                    </div>
                 </div>
-
+                
                 <button 
-                    onClick={() => setIsHidden(true)} 
-                    className='flex items-center gap-1 cursor-pointer hover-animation'
+                    onClick={() => setIsHidden(true)}
+                    className='flex items-center gap-1 cursor-pointer hover-animation whitespace-nowrap mt-2 sm:mt-0'
                 >
                     Read More
-                    <img src='assets/arrow-right.svg' className='w-5'/>
+                    <img src='assets/arrow-right.svg' className='w-5' alt="Arrow right"/>
                 </button>
             </div>
             
             <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'>
                 {isHidden && (
                     <ProjectDetails 
-                        title={title} 
-                        description={description} 
-                        subDescription={subDescription} 
-                        href={href} 
-                        image={image} 
-                        tags={tags} 
+                        title={title}
+                        description={description}
+                        subDescription={subDescription}
+                        href={href}
+                        image={image}
+                        tags={tags}
                         githubUrl={githubUrl}
                         closeModal={() => setIsHidden(false)}
                     />
-                )}    
+                )}
             </div>
         </>
     )

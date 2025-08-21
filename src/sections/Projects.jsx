@@ -35,32 +35,39 @@ function Projects() {
 
     return (
         <section 
-        id="work"
-        onMouseMove={handleMouseMove}
-        className="relative c-space section-spacing"
-    >
-        <h2 className="text-heading">Some Cool Projects</h2>
-        <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full">
-            {myProjects.map((project) => (
-                <Project key={project.id} {...project} setPreview={setPreview}/>
-            ))}
-        </div>
-        
-        {preview && previewImages.length > 0 && (
-            <motion.div 
-                className="fixed top-0 left-0 z-50 pointer-events-none w-100 h-70" 
-                style={{x: springX, y: springY}}
-            >
-                <ImageSlider 
-                    images={previewImages}
-                    interval={1500} // 1 second for preview
-                    showControls={false}
-                    className="w-full h-full shadow-lg"
-                    onImageChange={() => {}} // No need to update preview in this case
-                />
-            </motion.div>
-        )}
-    </section>
+            id="work"
+            onMouseMove={handleMouseMove}
+            className="relative c-space section-spacing"
+        >
+            <h2 className="text-heading">Some Cool Projects</h2>
+            
+            {/* Container with same responsive approach as About section */}
+            <div className="w-full mt-12">
+                <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full mb-4"></div>
+                
+                {/* Projects container with proper width constraints */}
+                <div className="w-full max-w-full overflow-hidden">
+                    {myProjects.map((project) => (
+                        <Project key={project.id} {...project} setPreview={setPreview}/>
+                    ))}
+                </div>
+            </div>
+            
+            {preview && previewImages.length > 0 && (
+                <motion.div 
+                    className="fixed top-0 left-0 z-50 pointer-events-none w-100 h-70"
+                    style={{x: springX, y: springY}}
+                >
+                    <ImageSlider 
+                        images={previewImages}
+                        interval={1500} // 1 second for preview
+                        showControls={false}
+                        className="w-full h-full shadow-lg"
+                        onImageChange={() => {}} // No need to update preview in this case
+                    />
+                </motion.div>
+            )}
+        </section>
     )
 }
 
