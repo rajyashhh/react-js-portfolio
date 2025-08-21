@@ -49,7 +49,7 @@ const variants={
                              variants={variants}
                              initial="hidden"
                              animate="visible"
-                             transition={{delay : 1.2}}>Building</motion.p>
+                             transition={{delay : 1.2}}> <br/>A developer who Ships</motion.p>
                 <motion.div  variants={variants}
                             initial="hidden"
                             animate="visible"
@@ -60,7 +60,7 @@ const variants={
                              variants={variants}
                              initial="hidden"
                              animate="visible"
-                             transition={{delay : 1.8}}>Web Applications</motion.p>
+                             transition={{delay : 1.8}}>MVPs and Web solutions Superfast!</motion.p>
             </div>
         </div>
         
