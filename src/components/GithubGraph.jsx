@@ -3,7 +3,7 @@ import React from "react";
 function GithubGraph() {
   return (
     <div>
-      
+      {/* picture added */}
       <picture>
         <source
           media="(prefers-color-scheme: dark)"
